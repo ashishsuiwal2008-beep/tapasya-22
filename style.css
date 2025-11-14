@@ -1,0 +1,135 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #0a0a23;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #00bcd4;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* Sections */
+section {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.home {
+  background-color: #e3f2fd;
+  padding-top: 80px;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #00bcd4;
+}
+
+/* About, Education, Projects, Contact */
+.about, .education, .projects, .contact {
+  background: #fff;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Education & Skills */
+.edu-skill {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.edu-skill div {
+  margin: 15px;
+}
+
+.skills li {
+  list-style-type: square;
+}
+
+/* Projects */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  background-color: #e3f2fd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+/* Contact */
+.contact a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #0a0a23;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .edu-skill {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project {
+    width: 90%;
+  }
+}
